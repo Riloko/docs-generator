@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <mate charest="utf-8" />
+    <title>Hello world!</title>
+</head>
+
+<body>
+    <table border="1" style="width: 979px;">
+        <tbody>
+            <tr>
+                <td style="width: 913.594px;" colspan="9">
+                    <p>Расчетный листок за {{ date }} года</p>
+                    <p>{{ company }}</p>
+                </td>
+                <td style="width: 3px;">
+                    <p>&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 521.594px;" colspan="6">
+                    <p>Работник: {{ fio_employee }}</p>
+                </td>
+                <td style="width: 392px;" colspan="3">
+                    <p>Подразделение: {{ department }}</p>
+                </td>
+                <td style="width: 3px;">
+                    <p>&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 521.594px;" colspan="6">
+                    <p>Табельный номер: 95</p>
+                </td>
+                <td style="width: 392px;" colspan="3">
+                    <p>Должность: {{ position }}</p>
+                </td>
+                <td style="width: 3px;">
+                    <p>&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 201px;">
+                    <p><em>Вид</em></p>
+                </td>
+                <td style="width: 101px;">
+                    <p><em>Период</em></p>
+                </td>
+                <td style="width: 66.5938px;" colspan="2">
+                    <p><em>Дни</em></p>
+                </td>
+                <td style="width: 70px;">
+                    <p><em>Часы</em></p>
+                </td>
+                <td style="width: 83px;">
+                    <p><em>Сумма</em></p>
+                </td>
+                <td style="width: 212px;">
+                    <p><em>Вид</em></p>
+                </td>
+                <td style="width: 98px;">
+                    <p><em>Период</em></p>
+                </td>
+                <td style="width: 85px;" colspan="2">
+                    <p><em>Сумма</em></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 521.594px;" colspan="6">
+                    <p><strong><em>1. Начислено</em></strong></p>
+                </td>
+                <td style="width: 395px;" colspan="4">
+                    <p><strong><em>2. Удержано</em></strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 201px;">
+                    <p>Аванс</p>
+                </td>
+                <td style="width: 101px;">
+                    <p>{{ date }}</p>
+                </td>
+                <td style="width: 56.5938px;">
+                    <p>22</p>
+                </td>
+                <td style="width: 80px;" colspan="2">
+                    <p>176</p>
+                </td>
+                <td style="width: 83px;">
+                    <p>{{ prepaidExpense }}</p>
+                </td>
+                <td style="width: 212px;">
+                    <p>НДФЛ по ставке 13%</p>
+                </td>
+                <td style="width: 98px;">
+                    <p>{{ date }}</p>
+                </td>
+                <td style="width: 85px;" colspan="2">
+                    <p>{{ ndfl }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 201px;">
+                    <p>Оклад</p>
+                </td>
+                <td style="width: 101px;">
+                    <p>{{ date }}</p>
+                </td>
+                <td style="width: 66.5938px;" colspan="2">
+                    <p>22</p>
+                </td>
+                <td style="width: 70px;">
+                    <p>176</p>
+                </td>
+                <td style="width: 83px;">
+                    <p>{{ salary }}</p>
+                </td>
+                <td style="width: 212px;">
+                    <p>Выплаченный аванс</p>
+                </td>
+                <td style="width: 98px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 85px;" colspan="2">
+                    <p>{{ prepaidExpense }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 201px;">
+                    <p>Премия</p>
+                </td>
+                <td style="width: 101px;">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _</p>
+                </td>
+                <td style="width: 66.5938px;" colspan="2">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 70px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 83px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 212px;">
+                    <p>Дополнительные страховые взносы на накопительную часть пенсии</p>
+                </td>
+                <td style="width: 98px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 85px;" colspan="2">
+                    <p>&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 201px;">
+                    <p>Компенсация</p>
+                    <p>за задержку з.п., отпускн. и т.д.</p>
+                </td>
+                <td style="width: 101px;">
+                    <p>_</p>
+                </td>
+                <td style="width: 66.5938px;" colspan="2">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 70px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 83px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 212px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 98px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 85px;" colspan="2">
+                    <p>&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 201px;">
+                    <p>Всего начислено:</p>
+                </td>
+                <td style="width: 101px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 66.5938px;" colspan="2">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 70px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 83px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 310px;" colspan="2">
+                    <p>Всего удержано:</p>
+                </td>
+                <td style="width: 85px;" colspan="2">
+                    <p>{{ ndfl }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 521.594px;" colspan="6">
+                    <p><strong><em>3. Взносы в ПФР </em></strong></p>
+                </td>
+                <td style="width: 310px;" colspan="2">
+                    <p><strong><em>Сумма к выплате</em></strong></p>
+                </td>
+                <td style="width: 85px;" colspan="2">
+                    <p>{{ paidSalary }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 438.594px;" colspan="5">
+                    <p>Страховые взносы в ПФР (страховая часть 22%)</p>
+                </td>
+                <td style="width: 83px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 310px;" colspan="2">
+                    <p>Долг за компанией</p>
+                </td>
+                <td style="width: 85px;" colspan="2">
+                    <p>00</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 438.594px;" colspan="5">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 83px;">
+                    <p>&nbsp;</p>
+                </td>
+                <td style="width: 310px;" colspan="2">
+                    <p>Долг за сотрудником</p>
+                </td>
+                <td style="width: 85px;" colspan="2">
+                    <p>00</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 201px;">&nbsp;</td>
+                <td style="width: 101px;">&nbsp;</td>
+                <td style="width: 56.5938px;">&nbsp;</td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td style="width: 70px;">&nbsp;</td>
+                <td style="width: 83px;">&nbsp;</td>
+                <td style="width: 212px;">&nbsp;</td>
+                <td style="width: 98px;">&nbsp;</td>
+                <td style="width: 82px;">&nbsp;</td>
+                <td style="width: 3px;">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+   "docsConfig": {
+       "salaryList": {
+        "format": "A4",
+        "orientation": "landscape",
+        "border": "10mm"
+       }
+   },
+   "mappings": {
+       "purpose": {
+           "income_confirmation": "Подтверждение доходов",
+           "for_declaration": "Для декларации"
+       },
+       "period": {
+           "last_three_months": "Последние три месяца",
+           "last_six_months": "Последние шесть месяцев",
+           "last_twelve_months": "Последние двеннадцать месяцев"
+       }
+   },
+   "salary": {
+       "Технический специалист": 22000,
+       "Менеджер": 27000,
+       "Data-scientist": 35000,
+       "Junior-разработчик": 60000,
+       "Middle-разработчик": 120000,
+       "Senior-разработчик": 240000,
+       "SEO": 380000,
+       "Head-leader": 500000
+   }
+}
