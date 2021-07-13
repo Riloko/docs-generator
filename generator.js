@@ -10,7 +10,7 @@ const document = (data, template) => {
     return {
         html: template,
         data: prepareDataToParse(data),
-        path: "./output.pdf",
+        path: `../docs/${Date.now()}_${data.fio_employee.replace(" ", "_")}_${data.type}.pdf`,
         type: "",
     }
 };
@@ -33,7 +33,7 @@ const generate = data => {
     return new Promise((resolve, reject) => {
         pdf
             .create(document(data, templates[data.type]), config.docsConfig[data.type])
-            .then(res => fs.readFile(res.filename, { encoding: 'base64' }).then(encode => resolve(createMessage('success', encode))))
+            .then(res => resolve(createMessage('success', res.filename)))
             .catch(error => resolve(createMessage('error', null, 'bad request')))
     })
 }
